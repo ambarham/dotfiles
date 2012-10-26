@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/X11R6/share/openbox/menu.xsd">
+	<menu id="root-menu" label="openbox3">
+		<item label="urxvt">
+			<action name="Execute">
+				<execute>
+					urxvt
+				</execute>
+			</action>
+		</item>
+		<item label="thunar">
+			<action name="Execute">
+				<execute>
+					thunar
+				</execute>
+			</action>
+		</item>
+		<item label="chromium">
+			<action name="Execute">
+				<execute>
+					chromium
+				</execute>
+			</action>
+		</item>
+		<item label="gedit">
+			<action name="Execute">
+				<execute>
+					gedit
+				</execute>
+			</action>
+		</item>
+                <item label="htop">
+			<action name="Execute">
+				<execute>
+					urxvt -title 'htop' -e htop
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu execute="~/.config/openbox/pipemenus/obpipemenu-places ~/" id="places" label="dox"/>
+		<menu execute="~/.config/openbox/pipemenus/obrecent.sh ~/" id="recent" label="recent"/>
+		<separator label="Програми"/>
+		<menu id="Інструменти" label="Інструменти" icon="/home/john/.icons/Faenza/categories/22/applications-accessories.png">
+                        <item label="Oracle VM VirtualBox">
+				<action name="Execute">
+					<execute>
+						VirtualBox %U
+					</execute>
+				</action>
+			</item>
+			<item label="Leafpad">
+				<action name="Execute">
+					<execute>
+						leafpad %U
+					</execute>
+				</action>
+			</item>
+			<item label="Parcellite">
+				<action name="Execute">
+					<execute>
+						parcellite %U
+					</execute>
+				</action>
+			</item>
+			<item label="Xarchiver">
+				<action name="Execute">
+					<execute>
+						xarchiver
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-442254" label="poedit">
+			<item label="Poedit">
+				<action name="Execute">
+					<execute>
+						poedit %U
+					</execute>
+				</action>
+			</item>
+		</menu>
+                <menu id="root-menu-442251" label="libre office">
+			<item label="Libre Office">
+				<action name="Execute">
+					<execute>
+						libreoffice
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="feh" label="feh">
+			<item label="GPicview">
+				<action name="Execute">
+					<execute>
+						gpicview
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="Media" label="Media">
+			<item label="DeaDBeeF">
+				<action name="Execute">
+					<execute>
+						deadbeef
+					</execute>
+				</action>
+			</item>
+                        <item label="Ario">
+				<action name="Execute">
+					<execute>
+						ario %U
+					</execute>
+				</action>
+			</item>
+			<item label="SMPlayer">
+				<action name="Execute">
+					<execute>
+						smplayer
+					</execute>
+				</action>
+			</item>
+                        <item label="UMPlayer">
+				<action name="Execute">
+					<execute>
+						umplayer
+					</execute>
+				</action>
+			</item>
+			<item label="VLC">
+				<action name="Execute">
+					<execute>
+						vlc
+					</execute>
+				</action>
+			</item>
+			<item label="Sonata">
+				<action name="Execute">
+					<execute>
+						sonata
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="Internet" label="Internet" icon="/home/john/.icons/Faenza/categories/22/applications-internet.png">
+			<item label="chromium">
+				<action name="Execute">
+					<execute>
+						chromium
+					</execute>
+				</action>
+			</item>
+			<item label="Dropbox">
+				<action name="Execute">
+					<execute>
+						dropboxd %U
+					</execute>
+				</action>
+			</item>
+			<item label="qBittorrent">
+				<action name="Execute">
+					<execute>
+						qbittorrent %U
+					</execute>
+				</action>
+			</item>
+			<item label="Thunderbird">
+				<action name="Execute">
+					<execute>
+						thunderbird
+					</execute>
+				</action>
+			</item>
+			<item label="Filezilla">
+				<action name="Execute">
+					<execute>
+						filezilla
+					</execute>
+				</action>
+			</item>
+			<item label="Skype">
+				<action name="Execute">
+					<execute>
+						skype %U
+					</execute>
+				</action>
+			</item>
+			<item label="Wicd">
+				<action name="Execute">
+					<execute>
+						/usr/bin/wicd-gtk
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="Admin" label="Admin">
+			<item label="Gparted">
+				<action name="Execute">
+					<execute>
+						xterm -title 'gparted:' -e sudo -p 'Password:' gparted
+					</execute>
+				</action>
+			</item>
+			<item label="Htop">
+				<action name="Execute">
+					<execute>
+						xterm -title 'htop' -e htop
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="openbox" label="openbox">
+			<item label="edit autostart">
+				<action name="Execute">
+					<execute>
+						xterm -e nano /home/dropsi/.config/openbox/autostart
+					</execute>
+				</action>
+			</item>
+			<item label="edit rc.xml">
+				<action name="Execute">
+					<execute>
+						xterm -e nano /home/dropsi/.config/openbox/rc.xml
+					</execute>
+				</action>
+			</item>
+			<item label="tint2">
+				<action name="Execute">
+					<execute>
+						tint2conf
+					</execute>
+				</action>
+			</item>
+		<separator/>
+		<menu id="exit-menu" label="exit">
+			<item label="exit">
+				<action name="Execute">
+					<command>
+						openbox --exit
+					</command>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>
